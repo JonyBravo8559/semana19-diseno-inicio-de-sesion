@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fondo2"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/customedittext">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:textSize="32sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/bluep"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/nombre"
+                android:background="@drawable/customedittext"
+
+                android:drawablePadding="8dp"
+                android:hint="    nombre"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/apellidos"
+                android:background="@drawable/customedittext"
+
+                android:drawablePadding="8dp"
+                android:hint="    apellidos"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"/>
+
+
+            <EditText
+                android:id="@+id/editTextDate2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:background="@drawable/customedittext"
+                android:drawablePadding="8dp"
+                android:text="Fecha de nacimiento"
+                android:textColor="@color/cardview_dark_background"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:layout_marginTop="40dp"
+                android:inputType="date" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/correo"
+                android:background="@drawable/customedittext"
+
+                android:drawablePadding="8dp"
+                android:hint="    correo"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/regusuario"
+                android:background="@drawable/customedittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:hint="usuario"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/regpassword"
+                android:background="@drawable/customedittext"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:hint="contraseña"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"/>
+
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#238BCF"
+                android:text="Registrarse"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
